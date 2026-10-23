@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0f"><meta name="description" content="Discover and watch movies on ZanaMovies.">
+<title>ZanaMovies — Movies for everyone</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">Z</span>Zana<span>Movies</span></a>
+<nav><a href="#home">Home</a><a href="#browse">Browse</a><a href="#categories">Categories</a></nav>
+<button class="admin-link" id="adminBtn">Admin</button></header>
+<main id="home">
+<section class="hero"><div class="hero-copy"><p class="eyebrow">YOUR NEXT MOVIE NIGHT STARTS HERE</p><h1>Stories worth<br><em>staying in for.</em></h1><p class="hero-text">Discover movies from Rwanda, Africa and around the world.</p><a class="primary-btn" href="#browse">Explore movies <span>→</span></a></div><div class="hero-art" aria-hidden="true"><div class="poster poster-back"></div><div class="poster poster-front"><span>THE</span><strong>BIG<br>SCREEN</strong><small>YOUR STORY STARTS HERE</small></div><div class="hero-glow"></div></div></section>
+<section class="browse-section" id="browse"><div class="section-heading"><div><p class="eyebrow">FIND YOUR NEXT FAVORITE</p><h2>Explore the collection</h2></div><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search movies..." aria-label="Search movies"></label></div>
+<div class="filters" id="categories"><button class="filter active" data-genre="All">All movies</button><button class="filter" data-genre="Rwandan">Rwandan</button><button class="filter" data-genre="African">African</button><button class="filter" data-genre="Hollywood">Hollywood</button><button class="filter" data-genre="Drama">Drama</button><button class="filter" data-genre="Action">Action</button><button class="filter" data-genre="Comedy">Comedy</button></div>
+<div id="movieGrid" class="movie-grid"><div class="empty-state"><div class="loader"></div><p>Loading the collection…</p></div></div>
+</section>
+<section class="join-banner"><div><p class="eyebrow">THE SHOW GOES ON</p><h2>A good story brings us together.</h2><p>Check back as our collection grows.</p></div><span class="banner-symbol">Z<span>✦</span></span></section>
+</main>
+<footer><a class="brand small-brand" href="#home"><span class="brand-mark">Z</span>Zana<span>Movies</span></a><p>Watch freely. Share stories. Respect creators.</p><small>© <span id="year"></span> ZanaMovies</small></footer>
+<div class="modal hidden" id="watchModal" role="dialog" aria-modal="true" aria-label="Movie player"><div class="modal-panel player-panel"><button class="close-modal" data-close="watchModal" aria-label="Close">×</button><video id="moviePlayer" controls playsinline></video><div class="player-info"><h2 id="playerTitle"></h2><p id="playerDescription"></p></div></div></div>
+<div class="modal hidden" id="adminModal" role="dialog" aria-modal="true" aria-label="Admin sign in"><div class="modal-panel admin-panel"><button class="close-modal" data-close="adminModal" aria-label="Close">×</button><p class="eyebrow">CONTENT MANAGEMENT</p><h2>Admin access</h2><p>Movie uploading will be enabled after the secure storage and administrator account are configured.</p><p class="muted">This demo page does not accept or store passwords.</p><button class="primary-btn" data-close="adminModal">Got it</button></div></div>
+<script src="app.js"></script></body></html>
